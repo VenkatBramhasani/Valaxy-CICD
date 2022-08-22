@@ -1,0 +1,11 @@
+FROM centos:centos7
+LABEL maintainer="Venkat.Bramhasani"
+LABEL version="1.0"
+RUN yum install java -y
+RUN mkdir /opt/tomcat
+WORKDIR /opt/tomcat
+ADD https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.47/bin/apache-tomcat-8.5.47.tar.gz .
+RUN tar -xvzf apache-tomcat-8.5.47.tar.gz
+RUN mv apache-tomcat-8.5.47/* /opt/tomcat
+EXPOSE 8080
+CMD ["/opt/tomcat/bin/catalina.sh", "run"]

@@ -1,0 +1,2 @@
+FROM mytomcat:v1.0
+COPY ./*.war /opt/tomcat/webapps
