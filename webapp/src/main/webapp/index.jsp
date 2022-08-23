@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <body style="background-image: -webkit-linear-gradient(left, rgba(0, 255, 115, 0.475), yellow);">
+    <body style="background-image: -webkit-linear-gradient(left, rgba(178, 204, 164, 0.459), rgba(255, 0, 0, 0.892));">
     <h1>New user Register for DevOps Learning</h1>
     <p>Please fill in this form to create an account.</p>
   </body>
